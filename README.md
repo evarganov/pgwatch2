@@ -235,6 +235,7 @@ one should also then enable the [track_io_timing](https://www.postgresql.org/doc
 shared_preload_libraries = 'pg_stat_statements'
 ```
 After restarting the server install the extensions as superuser
+yum install postgresql-contrib postgresql-plpython
 ```
 CREATE EXTENSION pg_stat_statements;
 CREATE EXTENSION plpythonu;
