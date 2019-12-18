@@ -236,6 +236,7 @@ shared_preload_libraries = 'pg_stat_statements'
 ```
 After restarting the server install the extensions as superuser
 yum install postgresql-contrib postgresql-plpython
+yum install postgresql11-server postgresql11-contrib postgresql11-plpython postgresql11
 ```
 CREATE EXTENSION pg_stat_statements;
 CREATE EXTENSION plpythonu;
