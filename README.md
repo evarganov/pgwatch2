@@ -237,6 +237,10 @@ shared_preload_libraries = 'pg_stat_statements'
 After restarting the server install the extensions as superuser
 yum install postgresql-contrib postgresql-plpython
 yum install postgresql11-server postgresql11-contrib postgresql11-plpython postgresql11
+yum install python-devel -y
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+pip install psutil
 ```
 CREATE EXTENSION pg_stat_statements;
 CREATE EXTENSION plpythonu;
