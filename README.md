@@ -235,7 +235,7 @@ one should also then enable the [track_io_timing](https://www.postgresql.org/doc
 shared_preload_libraries = 'pg_stat_statements'
 ```
 After restarting the server install the extensions as superuser
-yum install postgresql-contrib postgresql-plpython
+yum install postgresql-contrib postgresql-plpython postgresql-plpython3
 yum install postgresql11-server postgresql11-contrib postgresql11-plpython postgresql11
 yum install python-devel -y
 curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
