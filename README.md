@@ -244,7 +244,10 @@ pip install psutil
 ```
 CREATE EXTENSION pg_stat_statements;
 CREATE EXTENSION plpythonu;
+CREATE EXTENSION pg_qualstats;
 ```
+ shared_preload_libraries: pg_stat_statements, pg_qualstats
+
 
 Now also install the wrapper functions (under superuser role) for enabling "Stat statement" and CPU load info fetching for non-superusers
 ```
